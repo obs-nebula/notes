@@ -3,7 +3,7 @@
 * [Supernova](https://github.com/obs-nebula/supernova) - This is our central repository.
   * We create new things here first, and then if make sense to create a new repository we can close the issue and continue on the created repository.
   * It's also a good place to create issues that affect multiple repositories.
-* [check-traces](https://github.com/obs-nebula/check-traces) - The purpose of this repository is to ensure that a basic Express app's traces are correctly generated and successfully exported to the final destination which is Jaeger. So we can make safer modifications and experiments according to the evolution of the APIs of the OTEL-JS modules.
+* [check-traces](https://github.com/obs-nebula/check-traces) - The purpose of this repository is to ensure that a basic Express app's traces are correctly generated and successfully exported to the final destination which is Jaeger. So we can make safer modifications and experiments according to the evolution of the APIs of the OTEL-JS modules. Since we are using `@opentelemetry/exporter-trace-otlp-http` instead of `@opentelemetry/exporter-jaeger` we can guarantee that the results of CI running on the main branch will be the same for any dependency updates for the other branches.
   * Branches:
     * [add-otelcol](https://github.com/obs-nebula/check-traces/tree/add-otelcol) - The main branch is exporting directly to Jaeger upstream. In this branch we have the OTELCOL in the middle and the application is deployed to OpenShift using the downstream operators.
     * [meta-package](https://github.com/obs-nebula/check-traces/tree/meta-package) - Same as the main branch but using the OTEL-JS meta-package instead `@opentelemetry/auto-instrumentations-node`.
