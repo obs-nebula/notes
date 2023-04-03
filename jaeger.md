@@ -1,4 +1,4 @@
-> Notes based on Jaeger/documentation repository. This is basically a reduced version of https://github.com/jaegertracing/documentation.
+> Notes based on Jaeger/documentation repository. This is basically a reduced version of https://github.com/jaegertracing/documentation focused on obs-nebula scope -- only. 
 
 * **Getting in touch**
   * [Slack channel](https://cloud-native.slack.com/archives/CGG7NFUJ3)
@@ -27,4 +27,8 @@
   * **Remote Sampling Configuration** - `OUT-OF-SCOPE`
 * **Architecture**
   * **Terminology** - All the terminology section makes sense to read directly in the [docs](https://github.com/jaegertracing/documentation/blob/main/content/docs/next-release/architecture.md#terminology)
-  * The other sections talks about deployment options but we are going to stick with all-in-one binary and in-memory storage. The other sections are `OUT-OF-SCOPE`
+  * The other sections talks about deployment options but we are going to stick with all-in-one binary and in-memory storage, so adding `OUT-OF-SCOPE` for this.
+* cli.md, deployment.md, external-guides.md, faq.md, features.md as `OUT-OF-SCOPE`
+* **Frontend UI**
+  * We can use some flags to hide some parts of the UI, useful for sharing and screenshots
+    * Example: `http://localhost:16686/trace/{trace-id}?uiEmbed=v0&uiTimelineHideMinimap=1&uiTimelineHideSummary=1`
