@@ -217,3 +217,38 @@ It does **not** provide automated instrumentation of known libraries or host env
 ### template
 
 > TODO: description
+
+## [opentelemetry-js-contrib/packages/](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/packages)
+
+### opentelemetry-host-metrics
+
+This module provides automatic collection of Host Metrics which includes metrics for:
+
+* CPU
+* Memory
+* Network
+
+### opentelemetry-id-generator-aws-xray
+
+The OpenTelemetry IdGenerator for AWS X-Ray generates trace IDs with its first four bytes set to the start time of the
+trace followed by a unique identifier consisting of 12 bytes of randomly generated numbers. OpenTelemetry offers an
+extension point which allows the usage of this custom IdGenerator as opposed to the out-of-the-box random IdGenerator,
+enabling compatibility with AWS X-Ray.
+
+### opentelemetry-propagation-utils
+
+A collection of propagation utils for opentelemetry.
+
+### opentelemetry-redis-common
+
+This is an internal utils package used for the different redis instrumentations:
+
+1. ioredis
+2. redis
+3. redis-4
+
+### opentelemetry-test-utils
+
+This is a internal utils package used across the contrib packages.
+No guarantees are given to uses outside of [open-telemetry/opentelemetry-js-contrib](https://github.com/open-telemetry/opentelemetry-js-contrib/) repository.
+
