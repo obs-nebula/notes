@@ -283,3 +283,16 @@ This is useful for collecting telemetry in GitHub Actions-powered CI/CD workflow
 
 This resource detector will detect the Instana agent to register the Opentelemetry as a Node.js process. The created resource will be automatically merged with the existing resources and contains the real PID, which is returned from the Instana agent. This mechanism is needed to connect the Node.js Otel process with the incoming Opentelemetry spans.
 
+## [opentelemetry-js-contrib/metapackages/](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/metapackages)
+
+### auto-instrumentations-node
+
+This module provides a way to auto instrument any Node application to capture telemetry from a number of popular libraries and frameworks.
+You can export the telemetry data in a variety of formats. Exporters, samplers, and more can be configured via [environment variables][env-var-url].
+The net result is the ability to gather telemetry data from a Node application without any code changes.
+
+This module also provides a simple way to manually initialize multiple Node instrumentations for use with the OpenTelemetry SDK.
+
+### auto-instrumentations-web
+
+Same as above, but for web.
