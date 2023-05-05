@@ -252,3 +252,34 @@ This is an internal utils package used for the different redis instrumentations:
 This is a internal utils package used across the contrib packages.
 No guarantees are given to uses outside of [open-telemetry/opentelemetry-js-contrib](https://github.com/open-telemetry/opentelemetry-js-contrib/) repository.
 
+
+## [opentelemetry-js-contrib/detectors/](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/detectors/node)
+
+### opentelemetry-resource-detector-alibaba-cloud
+
+Resource detector for Alibaba Cloud.
+
+### opentelemetry-resource-detector-aws
+
+Resource detector for Amazon Web Services.
+
+### opentelemetry-resource-detector-container
+
+Resource detector for container id.
+
+### opentelemetry-resource-detector-gcp
+
+Resource detector for Google Cloud Platform.
+
+### opentelemetry-resource-detector-github
+
+Resource detector for GitHub Actions.
+
+Detects `GITHUB_*` environment variables [specified here](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables) and adds as attributes on a resource.
+
+This is useful for collecting telemetry in GitHub Actions-powered CI/CD workflows.
+
+### opentelemetry-resource-detector-instana
+
+This resource detector will detect the Instana agent to register the Opentelemetry as a Node.js process. The created resource will be automatically merged with the existing resources and contains the real PID, which is returned from the Instana agent. This mechanism is needed to connect the Node.js Otel process with the incoming Opentelemetry spans.
+
