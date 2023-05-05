@@ -126,3 +126,94 @@ Used standalone, this module provides methods for manual instrumentation of code
 
 It does **not** provide automated instrumentation of known libraries or host environment logs out-of-the-box.
 
+
+## [opentelemetry-js/packages/](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages)
+
+### opentelemetry-context-async-hooks
+
+This package provides two [`ContextManager`](https://open-telemetry.github.io/opentelemetry-js/interfaces/_opentelemetry_api.ContextManager.html) implementations built on APIs from Node.js's [`async_hooks`][async-hooks-doc] module. If you're looking for a `ContextManager` to use in browser environments, consider [opentelemetry-context-zone](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-context-zone) or [opentelemetry-context-zone-peer-dep](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-context-zone-peer-dep).
+
+### opentelemetry-context-zone-peer-dep
+
+This module provides *Zone Context Manager with a peer dependency for [zone-js]* for Web applications.
+If you use Angular you already have the [zone-js] and you should use this package.
+If you don't have your own [zone-js] please use [@opentelemetry/context-zone]
+
+### opentelemetry-context-zone
+
+This module provides *Zone Context Manager with bundled [zone-js]* for Web applications.
+If you have your own [zone-js] please use [@opentelemetry/context-zone-peer-dep]
+If you use Angular it means you already have the [zone-js] and you should use [@opentelemetry/context-zone-peer-dep]
+
+### opentelemetry-core
+
+This package provides default implementations of the OpenTelemetry API for trace and metrics. It's intended for use both on the server and in the browser.
+
+### opentelemetry-exporter-jaeger
+(Deprecated) OpenTelemetry Jaeger Trace Exporter for Node.js
+
+**NOTE: Support for `@opentelemetry/exporter-jaeger` will end March 2024, please use any of the following packages instead:**
+
+- `@opentelemetry/exporter-trace-otlp-proto`
+- `@opentelemetry/exporter-trace-otlp-grpc`
+- `@opentelemetry/exporter-trace-otlp-http`
+
+### opentelemetry-exporter-zipkin
+
+OpenTelemetry Zipkin Trace Exporter allows the user to send collected traces to Zipkin.
+
+### opentelemetry-propagator-b3
+
+The OpenTelemetry b3 propagator package provides multiple propagator
+implementations for systems using the b3 context format. See the
+[b3 specification][b3-spec] for complete details.
+
+### opentelemetry-propagator-jaeger
+
+OpenTelemetry Jaeger propagator provides HTTP header propagation for systems that are using Jaeger HTTP header format.
+
+### opentelemetry-resources
+
+The OpenTelemetry Resource is an immutable representation of the entity producing telemetry. For example, a process producing telemetry that is running in a container on Kubernetes has a Pod name, it is in a namespace and possibly is part of a Deployment which also has a name. All three of these attributes can be included in the `Resource`.
+
+### opentelemetry-sdk-trace-base
+
+The `tracing` module contains the foundation for all tracing SDKs of [opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js).
+
+Used standalone, this module provides methods for manual instrumentation of code, offering full control over span creation for client-side JavaScript (browser) and Node.js.
+
+It does **not** provide automated instrumentation of known libraries, context propagation for asynchronous invocations or distributed-context out-of-the-box.
+
+### opentelemetry-sdk-trace-node
+
+This module provides *automated instrumentation and tracing* for Node.js applications.
+
+For manual instrumentation see the
+[@opentelemetry/sdk-trace-base](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-base) package.
+
+### opentelemetry-sdk-trace-web
+
+This module provides *automated instrumentation and tracing* for Web applications.
+
+For manual instrumentation see the
+[@opentelemetry/sdk-trace-base](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-sdk-trace-base) package.
+
+### opentelemetry-semantic-conventions
+
+Semantic Convention constants for use with the OpenTelemetry SDK/APIs. [This document][trace-semantic_conventions] defines standard attributes for traces.
+
+### opentelemetry-shim-opentracing
+
+OpenTracing shim allows existing OpenTracing instrumentation to report to OpenTelemetry
+
+### sdk-metrics
+
+This module contains the Metrics SDK of [opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js).
+
+Used standalone, this module provides methods for manual instrumentation of code, offering full control over recording metrics for client-side JavaScript (browser) and Node.js.
+
+It does **not** provide automated instrumentation of known libraries or host environment metrics out-of-the-box.
+
+### template
+
+> TODO: description
