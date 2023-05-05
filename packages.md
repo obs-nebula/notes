@@ -486,21 +486,29 @@ This module provides automatic instrumentation for injection of trace context fo
 
 ## [opentelemetry-js-contrib/plugins/web](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/plugins/web)
 
-#### opentelemetry-instrumentation-document-load
+### opentelemetry-instrumentation-document-load
 
 This module provides automatic instrumentation for *document load* for Web applications, which may be loaded using the [`@opentelemetry/sdk-trace-web`](https://www.npmjs.com/package/@opentelemetry/sdk-trace-web) package.
 
-#### opentelemetry-instrumentation-long-task
+### opentelemetry-instrumentation-long-task
 
 This module provides automatic instrumentation for [Long Task API][mdn-long-task] which may be loaded using the [`@opentelemetry/sdk-trace-web`](https://www.npmjs.com/package/@opentelemetry/sdk-trace-web) package. It creates spans from tasks that take more than 50 milliseconds, all of the data reported via [`PerformanceLongTaskTiming`][mdn-performance-long-task-timing] is included as span attributes.
 
-#### opentelemetry-instrumentation-user-interaction
+### opentelemetry-instrumentation-user-interaction
 
 This module provides automatic instrumentation for *user interactions* for Web applications, which may be loaded using the [`@opentelemetry/sdk-trace-web`](https://www.npmjs.com/package/@opentelemetry/sdk-trace-web) package.
 
 This module can work either with [zone-js] or without it, with [zone-js] and ZoneContextManager it will fully support the async operations. Without [zone-js] it will still work but with limited support.
 If you use Angular or [@opentelemetry/context-zone] you will have [zone-js] included.
 
-#### opentelemetry-plugin-react-load
+### opentelemetry-plugin-react-load
 
 This module provides automatic instrumentation for *React lifecycles* for Web applications, which may be loaded using the [`@opentelemetry/sdk-trace-web`](https://www.npmjs.com/package/@opentelemetry/sdk-trace-web) package.
+
+
+##### total
+
+```
+➜  notes git:(main) ✗ grep -c "^###" packages.md
+94
+```
