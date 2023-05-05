@@ -296,3 +296,33 @@ This module also provides a simple way to manually initialize multiple Node inst
 ### auto-instrumentations-web
 
 Same as above, but for web.
+
+
+## [opentelemetry-js-contrib/propagators/](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/propagators)
+
+### opentelemetry-propagator-aws-xray
+
+The OpenTelemetry Propagator for AWS X-Ray provides HTTP header propagation for systems that are using AWS `X-Amzn-Trace-Id` format.
+This propagator translates the OpenTelemetry SpanContext into the equivalent AWS header format, for use with the OpenTelemetry JS SDK.
+`TraceState` is currently not propagated.
+
+
+### opentelemetry-propagator-grpc-census-binary
+
+OpenTelemetry gRPC Census propagator provides gRPC header propagation for systems that use the OpenCensus 'grpc-trace-bin' binary header format. This allows for context propagation when either:
+
+* incoming gRPC calls come from services already instrumented using OpenCensus
+* outgoing gRPC calls go to services already instrumented using OpenCensus
+
+This propagator works in conjunction with the OpenTelemetry [gRPC plugin](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/exporter-trace-otlp-grpc).
+
+
+### opentelemetry-propagator-instana
+
+The OpenTelemetry Propagator for Instana provides HTTP header propagation for systems that are using IBM Observability by Instana.
+This propagator translates the Instana trace correlation headers (`X-INSTANA-T/X-INSTANA-S/X-INSTANA-L`) into the OpenTelemetry `SpanContext`, and vice versa.
+It does not handle `TraceState`.
+
+### opentelemetry-propagator-ot-trace
+
+???
