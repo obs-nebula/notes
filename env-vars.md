@@ -1,25 +1,8 @@
 # Environment variables
 
-* OTEL_ATTRIBUTE_COUNT_LIMIT
-  * todo
-* OTEL_ATTRIBUTE_VALUE_LENGTH_LIMIT
-  * todo
-* OTEL_BLRP_EXPORT_TIMEOUT
-  * todo
-* OTEL_BLRP_MAX_EXPORT_BATCH_SIZE
-  * todo
-* OTEL_BLRP_MAX_QUEUE_SIZE
-  * todo
-* OTEL_BLRP_SCHEDULE_DELAY
-  * todo
-* OTEL_BSP_EXPORT_TIMEOUT
-  * todo
-* OTEL_BSP_MAX_EXPORT_BATCH_SIZE
-  * todo
-* OTEL_BSP_MAX_QUEUE_SIZE
-  * todo
-* OTEL_BSP_SCHEDULE_DELAY
-  * todo
+Some environment variables are described here:
+https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/configuration/sdk-environment-variables.md#general-sdk-configuration
+
 * OTEL_EXPORTER_JAEGER_AGENT_HOST
   * todo
 * OTEL_EXPORTER_JAEGER_AGENT_PORT
@@ -104,21 +87,9 @@
   * todo
 * OTEL_EXPORTER_OTLP_TRACES_TIMEOUT
   * todo
-* OTEL_EXPORTER_PROMETHEUS_HOST
-  * todo
-* OTEL_EXPORTER_ZIPKIN_ENDPOINT
-  * todo
 * OTEL_GRAPHQL_DATA_SYMBOL
   * todo
 * OTEL_LAMBDA_DISABLE_AWS_CONTEXT_PROPAGATION
-  * todo
-* OTEL_LOG_LEVEL
-  * todo
-* OTEL_LOGRECORD_ATTRIBUTE_COUNT_LIMIT
-  * todo
-* OTEL_LOGRECORD_ATTRIBUTE_VALUE_LENGTH_LIMIT
-  * todo
-* OTEL_LOGS_EXPORTER
   * todo
 * OTEL_NO_PATCH_MODULES
   * todo
@@ -128,31 +99,9 @@
   * todo
 * OTEL_PATCHED_SYMBOL
   * todo
-* OTEL_PROPAGATORS
-  * todo
-* OTEL_RESOURCE_ATTRIBUTES
-  * todo
 * OTEL_SAMPLING_PROBABILITY
-  * todo
-* OTEL_SDK_DISABLED
-  * todo
-* OTEL_SERVICE_NAME
-  * todo
-* OTEL_SPAN_ATTRIBUTE_COUNT_LIMIT
   * todo
 * OTEL_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT
   * todo
 * OTEL_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT
-  * todo
-* OTEL_SPAN_ATTRIBUTE_VALUE_LENGTH_LIMIT
-  * todo
-* OTEL_SPAN_EVENT_COUNT_LIMIT
-  * todo
-* OTEL_SPAN_LINK_COUNT_LIMIT
-  * todo
-* OTEL_TRACES_EXPORTER
-  * todo
-* OTEL_TRACES_SAMPLER
-  * todo
-* OTEL_TRACES_SAMPLER_ARG
   * todo
