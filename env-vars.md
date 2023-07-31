@@ -1,7 +1,6 @@
 # Environment variables
 
-Some environment variables are described in [general-sdk-configuration document](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/configuration/sdk-environment-variables.md#general-sdk-configuration)
-
+Some environment variables are defined and described in [general-sdk-configuration document](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/configuration/sdk-environment-variables.md#general-sdk-configuration)
 
 * OTEL_EXPORTER_JAEGER_AGENT_HOST
   * [Deprecated](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-jaeger#deprecated-opentelemetry-jaeger-trace-exporter-for-nodejs)
@@ -30,31 +29,33 @@ Some environment variables are described in [general-sdk-configuration document]
   * [exporter-logs-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-grpc#environment-variable-configuration)
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_ENDPOINT
-  * todo
+  * [exporter-logs-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-grpc#environment-variable-configuration)
+  * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_HEADERS
-  * todo
+  * [auto-instrumentations-node#usage-auto-instrumentation](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/metapackages/auto-instrumentations-node#usage-auto-instrumentation)
 * OTEL_EXPORTER_OTLP_INSECURE
   * [exporter-trace-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-grpc#environment-variable-configuration)
   * [exporter-logs-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-grpc#environment-variable-configuration)
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_LOGS_CERTIFICATE
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_CLIENT_CERTIFICATE
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_CLIENT_KEY
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_COMPRESSION
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_ENDPOINT
-  * todo
+  * [exporter-logs-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-grpc#environment-variable-configuration)
+  * [exporter-logs-otlp-http#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-http#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_LOGS_HEADERS
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_INSECURE
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_PROTOCOL
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_LOGS_TIMEOUT
-  * todo
+  * [exporter-logs-otlp-http#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-http#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_METRICS_CERTIFICATE
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_METRICS_CLIENT_CERTIFICATE
@@ -62,21 +63,19 @@ Some environment variables are described in [general-sdk-configuration document]
 * OTEL_EXPORTER_OTLP_METRICS_CLIENT_KEY
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_METRICS_COMPRESSION
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_METRICS_ENDPOINT
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_METRICS_HEADERS
-  * todo
+  * N/A
 * OTEL_EXPORTER_OTLP_METRICS_INSECURE
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_METRICS_PROTOCOL
-  * todo
+  * [opentelemetry-sdk-node#otlp-exporter](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-sdk-node#otlp-exporter)
 * OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE
   * [opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-exporter-metrics-otlp-grpc#environment-variable-configuration)
-* OTEL_EXPORTER_OTLP_METRICS_TIMEOUT
-  * todo
 * OTEL_EXPORTER_OTLP_PROTOCOL
-  * todo
+  * [auto-instrumentations-node#usage-auto-instrumentation](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/metapackages/auto-instrumentations-node#usage-auto-instrumentation)
 * OTEL_EXPORTER_OTLP_TIMEOUT
   * [exporter-trace-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-grpc#environment-variable-configuration)
   * [exporter-logs-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-logs-otlp-grpc#environment-variable-configuration)
@@ -89,31 +88,23 @@ Some environment variables are described in [general-sdk-configuration document]
 * OTEL_EXPORTER_OTLP_TRACES_COMPRESSION
   * [exporter-trace-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
-  * todo
+  * [auto-instrumentations-node#usage-auto-instrumentation](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/metapackages/auto-instrumentations-node#usage-auto-instrumentation)
 * OTEL_EXPORTER_OTLP_TRACES_HEADERS
-  * todo
+  * [auto-instrumentations-node#usage-auto-instrumentation](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/metapackages/auto-instrumentations-node#usage-auto-instrumentation)
 * OTEL_EXPORTER_OTLP_TRACES_INSECURE
   * [exporter-trace-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-grpc#environment-variable-configuration)
 * OTEL_EXPORTER_OTLP_TRACES_PROTOCOL
-  * todo
+  * [opentelemetry-sdk-node#otlp-exporter](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/opentelemetry-sdk-node#otlp-exporter)
 * OTEL_EXPORTER_OTLP_TRACES_TIMEOUT
   * [exporter-trace-otlp-grpc#environment-variable-configuration](https://github.com/open-telemetry/opentelemetry-js/tree/main/experimental/packages/exporter-trace-otlp-grpc#environment-variable-configuration)
-* OTEL_GRAPHQL_DATA_SYMBOL
-  * todo
 * OTEL_LAMBDA_DISABLE_AWS_CONTEXT_PROPAGATION
-  * todo
-* OTEL_NO_PATCH_MODULES
-  * todo
+  * [opentelemetry-instrumentation-aws-lambda#aws-lambda-instrumentation-options](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/plugins/node/opentelemetry-instrumentation-aws-lambda#aws-lambda-instrumentation-options)
 * OTEL_NODE_RESOURCE_DETECTORS
-  * todo
-* OTEL_OPEN_SPANS
-  * todo
-* OTEL_PATCHED_SYMBOL
-  * todo
+  * [auto-instrumentations-node#usage-auto-instrumentation](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/metapackages/auto-instrumentations-node#usage-auto-instrumentation)
 * OTEL_SAMPLING_PROBABILITY
   * Sampling configuration via environment variable has changed. If you were using `OTEL_SAMPLING_PROBABILITY` then you should replace it with `OTEL_TRACES_SAMPLER=parentbased_traceidratio` and `OTEL_TRACES_SAMPLER_ARG=<number>` where `<number>` is a number in the [0..1] range, e.g. "0.25". Default is 1.0 if unset.
   * https://github.com/open-telemetry/opentelemetry-js#018x-to-0190
 * OTEL_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT
-  * todo
+  * https://github.com/open-telemetry/opentelemetry-js/issues/3649
 * OTEL_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT
-  * todo
+  * https://github.com/open-telemetry/opentelemetry-js/issues/3649
