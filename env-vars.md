@@ -4,15 +4,15 @@ Some environment variables are described here:
 https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/configuration/sdk-environment-variables.md#general-sdk-configuration
 
 * OTEL_EXPORTER_JAEGER_AGENT_HOST
-  * todo
+  * Deprecated https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-jaeger#deprecated-opentelemetry-jaeger-trace-exporter-for-nodejs
 * OTEL_EXPORTER_JAEGER_AGENT_PORT
-  * todo
+  * Deprecated https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-jaeger#deprecated-opentelemetry-jaeger-trace-exporter-for-nodejs
 * OTEL_EXPORTER_JAEGER_ENDPOINT
-  * todo
+  * Deprecated https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-jaeger#deprecated-opentelemetry-jaeger-trace-exporter-for-nodejs
 * OTEL_EXPORTER_JAEGER_PASSWORD
-  * todo
+  * Deprecated https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-jaeger#deprecated-opentelemetry-jaeger-trace-exporter-for-nodejs
 * OTEL_EXPORTER_JAEGER_USER
-  * todo
+  * Deprecated https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-exporter-jaeger#deprecated-opentelemetry-jaeger-trace-exporter-for-nodejs
 * OTEL_EXPORTER_OTLP_CERTIFICATE
   * todo
 * OTEL_EXPORTER_OTLP_CLIENT_CERTIFICATE
@@ -100,7 +100,8 @@ https://github.com/open-telemetry/opentelemetry-specification/blob/main/specific
 * OTEL_PATCHED_SYMBOL
   * todo
 * OTEL_SAMPLING_PROBABILITY
-  * todo
+  * Sampling configuration via environment variable has changed. If you were using `OTEL_SAMPLING_PROBABILITY` then you should replace it with `OTEL_TRACES_SAMPLER=parentbased_traceidratio` and `OTEL_TRACES_SAMPLER_ARG=<number>` where `<number>` is a number in the [0..1] range, e.g. "0.25". Default is 1.0 if unset.
+  * https://github.com/open-telemetry/opentelemetry-js#018x-to-0190
 * OTEL_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT
   * todo
 * OTEL_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT
